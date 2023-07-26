@@ -17,10 +17,10 @@ router.get('/members/:searchParams', (req, res) => {
           'Content-Type': 'text/plain'
       }, 
         }).then(r => {
-            console.log("som tu r "+ r);
+            console.log("som gete v backende "+ r);
             r.text()
             .then(t => {
-              console.log("som tu t "+ t);
+              console.log("som v gete v backende v texte "+ t);
               res.send(t);
             })
             .catch(err => {

@@ -11,6 +11,8 @@ router.get('/', function(req, res, next) {
 router.get('/members', (req, res) => {
  // const searchParams = req.params.searchParams;
   let searchParams = "";
+  res.send("tralalalala");
+  return;
   fetch(`http://www.jusoft.sk/konstelacie/test/load.php?${searchParams}`, {
         headers: {
           'Accept': 'text/plain',

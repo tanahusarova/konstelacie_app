@@ -12,7 +12,6 @@ router.get('/members', (req, res) => {
  // const searchParams = req.params.searchParams;
   let searchParams = "";
   fetch(`http://www.jusoft.sk/konstelacie/test/load.php?${searchParams}`, {
-        mode: 'no-cors',
         headers: {
           'Accept': 'text/plain',
           'Content-Type': 'text/plain'
@@ -41,7 +40,6 @@ router.post('/members', (req, res) => {
  let searchParams = "";
   fetch(`http://www.jusoft.sk/konstelacie/test/save.php?${searchParams}`, {
     method: 'POST',
-    mode: 'no-cors',
     headers: {
         'Accept': 'text/plain',
         'Content-Type': 'text/plain'
